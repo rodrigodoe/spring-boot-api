@@ -1,0 +1,1 @@
+INSERT INTO `person` VALUES (4,'RECIFE-PE','Gabriela','Female','Carvalho'),(3,'RECIFE-PE','Rodrigo','Male','Carvalho'),(5,'RECIFE-PE','Gabriela','Female','Carvalho');

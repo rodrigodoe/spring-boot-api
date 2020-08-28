@@ -1,0 +1,17 @@
+language: bash
+services: docker
+before_install:
+  - cd spring-boot-api
+  - echo "We are in the Docker folder"
+script:
+  - docker-compose build
+before_deploy:
+  - echo "${DOCKER_PASSWORD}" | docker login --username "${DOCKER_USERNAME}" --pasword-stdin
+deploy:
+  provider: script
+  script: docker push rodrigodoe/spring-boot-api;
+    docker push rodrigodoe/mysql-spring-boot-api;
+  on:
+    branch: master
+notifications:
+  email: false
