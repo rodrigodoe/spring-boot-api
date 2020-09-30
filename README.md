@@ -11,6 +11,7 @@ Starter project:
 ### Docker integration
 ### VO pattern using DOZER
 ### Swagger Support
+### CI Using TravisCI
 
 
 
